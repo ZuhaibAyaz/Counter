@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+  padding: 200px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.app > * {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.counter-value {
+  margin-top: 23px;
+  color: #2d2d2d;
+  font-size: 30px;
+}
+
+.buttons {
+  margin: 0 auto;
+  margin: 23px;
+
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 15px;
+  width: 150px;
+  height: 35px;
+  border: none;
+  font-size: 21px;
+  background-color: #2c2f3d;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.75;
+}

@@ -16,21 +16,30 @@ function Timer() {
     setCount(0);
   }
 
-  
 
   return (
-    <div>
-        <h1>Counter</h1>
-         {count}
-         <button onClick={()=>increase()}>increase</button>
-     
-      <button onClick={()=>decrease()}>decrease</button>
-      <button onClick={()=>reset()}>reset</button>
-
-
-    </div>
+    <div className="app">
+<h1>Counter</h1>
+<div className="counter-value">
+  <strong>{count}</strong>
+</div>
+<div className="buttons">
+  <div>
+  <button onClick={()=>increase()}>increase</button>
+  </div>
+  <div>
+  <button onClick={()=>decrease()}>decrease</button>
+  </div>
+  <div>
+  <button onClick={()=>reset()}>reset</button>
+  </div>
+</div>
+</div>
+  
   )
   
 }
 
 export default Timer
+
+
